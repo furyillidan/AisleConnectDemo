@@ -68,6 +68,15 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		B507387F231517E200933671 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B5F3703B23112E7A006DCB19 /* GasPriceModel.swift */,
+				B5F3703D231153B5006DCB19 /* repositoryData.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		B5F3700F230A81CF006DCB19 = {
 			isa = PBXGroup;
 			children = (
@@ -89,6 +98,7 @@
 		B5F3701A230A81CF006DCB19 /* AisleConnectDemo */ = {
 			isa = PBXGroup;
 			children = (
+				B507387F231517E200933671 /* Model */,
 				B5F37037230A93C4006DCB19 /* Service */,
 				B5F370432314CAF4006DCB19 /* cell */,
 				B5F37036230A939F006DCB19 /* view */,
@@ -98,8 +108,6 @@
 				B5F37027230A81D4006DCB19 /* LaunchScreen.storyboard */,
 				B5F3702A230A81D4006DCB19 /* Info.plist */,
 				B5F37022230A81CF006DCB19 /* AisleConnectDemo.xcdatamodeld */,
-				B5F3703B23112E7A006DCB19 /* GasPriceModel.swift */,
-				B5F3703D231153B5006DCB19 /* repositoryData.swift */,
 			);
 			path = AisleConnectDemo;
 			sourceTree = "<group>";
