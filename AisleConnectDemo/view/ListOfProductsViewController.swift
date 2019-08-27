@@ -9,12 +9,22 @@
 import UIKit
 
 class ListOfProductsController: UIViewController {
+    
+    @IBOutlet weak var listOfProductTableView: UITableView!
+    
+    var test = ["1","2","3"]
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
+        self.listOfProductTableView.delegate = self
+        self.listOfProductTableView.dataSource = self
+        self.listOfProductTableView.estimatedRowHeight = 180.0;
+        self.listOfProductTableView.rowHeight = 100;
 
-       getList()
-       layout()
+        getList()
+        layout()
         
     }
     
@@ -48,11 +58,12 @@ class ListOfProductsController: UIViewController {
 extension ListOfProductsController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 1
+        return test.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        return UITableViewCell()
+        let cell = tableView.dequeueReusableCell(withIdentifier: "ListOfProductTableViewCell", for: indexPath) as! ListOfProductTableViewCell
+            return cell
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {

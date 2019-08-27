@@ -16,14 +16,14 @@ import UIKit
 
 class repositoryData : NSObject {
     
-    static let shared = repositoryData()
-    
-    weak var delegate : repositoryDataDelegate?
-    
-    var data: GasPriceModel?
-    
-    var gasPriceList : [GasPriceList]?
-    
+//    static let shared = repositoryData()
+//
+//    weak var delegate : repositoryDataDelegate?
+//
+//    var data: GasPriceModel?
+//
+//    var gasPriceList : [GasPriceList]?
+//
 //    func loadData () {
 //        let service = Service()
 //        service.delegate = self 

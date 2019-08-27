@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		97EBF5DD924B0724C9048A75 /* Pods_AisleConnectDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F77AF4FE556C8ECFB98541F /* Pods_AisleConnectDemo.framework */; };
+		B50738812315191B00933671 /* ListOfProductTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B50738802315191B00933671 /* ListOfProductTableViewCell.swift */; };
 		B5F3701C230A81CF006DCB19 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F3701B230A81CF006DCB19 /* AppDelegate.swift */; };
 		B5F3701E230A81CF006DCB19 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F3701D230A81CF006DCB19 /* HomeViewController.swift */; };
 		B5F37021230A81CF006DCB19 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5F3701F230A81CF006DCB19 /* Main.storyboard */; };
@@ -28,6 +29,7 @@
 /* Begin PBXFileReference section */
 		2F77AF4FE556C8ECFB98541F /* Pods_AisleConnectDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AisleConnectDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		535DE76FF8686851DDF63E50 /* Pods-AisleConnectDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AisleConnectDemo.debug.xcconfig"; path = "Target Support Files/Pods-AisleConnectDemo/Pods-AisleConnectDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		B50738802315191B00933671 /* ListOfProductTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListOfProductTableViewCell.swift; sourceTree = "<group>"; };
 		B5F37018230A81CF006DCB19 /* AisleConnectDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AisleConnectDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5F3701B230A81CF006DCB19 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B5F3701D230A81CF006DCB19 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -68,15 +70,6 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		B507387F231517E200933671 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				B5F3703B23112E7A006DCB19 /* GasPriceModel.swift */,
-				B5F3703D231153B5006DCB19 /* repositoryData.swift */,
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
 		B5F3700F230A81CF006DCB19 = {
 			isa = PBXGroup;
 			children = (
@@ -98,7 +91,6 @@
 		B5F3701A230A81CF006DCB19 /* AisleConnectDemo */ = {
 			isa = PBXGroup;
 			children = (
-				B507387F231517E200933671 /* Model */,
 				B5F37037230A93C4006DCB19 /* Service */,
 				B5F370432314CAF4006DCB19 /* cell */,
 				B5F37036230A939F006DCB19 /* view */,
@@ -108,6 +100,8 @@
 				B5F37027230A81D4006DCB19 /* LaunchScreen.storyboard */,
 				B5F3702A230A81D4006DCB19 /* Info.plist */,
 				B5F37022230A81CF006DCB19 /* AisleConnectDemo.xcdatamodeld */,
+				B5F3703B23112E7A006DCB19 /* GasPriceModel.swift */,
+				B5F3703D231153B5006DCB19 /* repositoryData.swift */,
 			);
 			path = AisleConnectDemo;
 			sourceTree = "<group>";
@@ -137,6 +131,7 @@
 			isa = PBXGroup;
 			children = (
 				B5F370442314CB1C006DCB19 /* ListTableViewCell.swift */,
+				B50738802315191B00933671 /* ListOfProductTableViewCell.swift */,
 			);
 			path = cell;
 			sourceTree = "<group>";
@@ -280,6 +275,7 @@
 				B5F37031230A87B4006DCB19 /* ListViewController.swift in Sources */,
 				B5F37035230A88E6006DCB19 /* ProductDetailsViewController.swift in Sources */,
 				B5F370452314CB1C006DCB19 /* ListTableViewCell.swift in Sources */,
+				B50738812315191B00933671 /* ListOfProductTableViewCell.swift in Sources */,
 				B5F3703C23112E7C006DCB19 /* GasPriceModel.swift in Sources */,
 				B5F3704023136D05006DCB19 /* searchViewController.swift in Sources */,
 				B5F37024230A81CF006DCB19 /* AisleConnectDemo.xcdatamodeld in Sources */,
