@@ -12,11 +12,15 @@ class ProductDetailsViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-       getList()
+        
+        self.navigationItem.title = "ProductDetails"
+        self.navigationItem.leftBarButtonItem = UIBarButtonItem(title: "ProductDetails", style: .plain, target: self, action: #selector(backToPrevious))
+        getList()
     }
     
-    
+    @objc func backToPrevious() {
+        self.navigationController?.popViewController(animated: true)
+    }
     
     func getList() {
         let url = "https://apistage2.aisleconnect.us/ac.server/rest/v2.5/product/:id"
